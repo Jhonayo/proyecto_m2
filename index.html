@@ -42,26 +42,81 @@
     </section>
 
     <!--seccion de mis proyectos-->
-    <section>
+      <section class="container my-5">
+        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
 
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img src="ruta imagen 1" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 1</h5>
+                            <p class="card-text">Descripción breve del proyecto 1.</p>
+                            <a href="#" class="btn btn-primary">Ir al proyecto 1</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="ruta-a-tu-imagen-proyecto-2.jpg" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 2</h5>
+                            <p class="card-text">Descripción breve del proyecto 2.</p>
+                            <a href="#" class="btn btn-primary">Ir al proyecto 2</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="ruta-a-tu-imagen-proyecto-3.jpg" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 3</h5>
+                            <p class="card-text">Descripción breve del proyecto 3.</p>
+                            <a href="#" class="btn btn-primary">Ir al proyecto 3</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- Control de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
     </section>
 
     <!--seccion de formulario de contacto-->
     <section>
       <div class="container">
-        <div class="row">
+        <form class="row g-3">
           <div class="col">
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Nombre</label>
+              <input class="form-control" type="text" id="nameInput" placeholder="Escribe tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email</label>
+              <input class="form-control" type="email" id="emailInput" placeholder="Escribe tu email">
+            </div>
             <div>
-<label for="emailInput" class="form-label">Email</label>
-<input class="form-control" type="email" id="emailInput" placeholder="Escribe tu email">            </div>
-            
-            
+              <label for="mensajeInput" class="form-label">Dejame tu mensaje</label>
+              <textarea name="mensaje" id="mensajeInput"></textarea>
+            </div>
+            <div class="col-12 mb-3">
+              <button type="submit" class="btn btn-primary">Enviar</button>
 
-
+            </div>
           </div>
-
-        </div>
-
+          
+        </form>
       </div>
     </section>
 
