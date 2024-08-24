@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,125 +9,170 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>EVALUACIÓN FINAL</title>
 </head>
+
 <body>
+  <!--barra de navegacion-->
   <header>
-    <nav class="navbar navbar-expand-mg bg-body-tertiary bg-dark border-bottom border-body">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Juan Ramirez</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-3">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Acerca de mi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Mis Proyectos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Logo" class="d-inline-block align-text-top"
+            id="logo"></a>
+        <a class="navbar-brand" href="#">Juan Ramirez</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#aboutMyId">Acerca de Mi</a>
+            <a class="nav-link active" aria-current="page" href="#proyectosId">Proyectos</a>
+            <a class="nav-link active" aria-current="page" href="#formularioContactoId">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
+
+    <!-- TODO completar con informacion mia y mejorar-->
     <!--seccion acerca de mi-->
-    <section>
-
-    </section>
-
-    <!--seccion de mis proyectos-->
-      <section class="container my-5">
-        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <div class="card">
-                        <img src="ruta imagen 1" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 1</h5>
-                            <p class="card-text">Descripción breve del proyecto 1.</p>
-                            <a href="#" class="btn btn-primary">Ir al proyecto 1</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="ruta-a-tu-imagen-proyecto-2.jpg" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 2</h5>
-                            <p class="card-text">Descripción breve del proyecto 2.</p>
-                            <a href="#" class="btn btn-primary">Ir al proyecto 2</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="ruta-a-tu-imagen-proyecto-3.jpg" class="card-img-top" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 3</h5>
-                            <p class="card-text">Descripción breve del proyecto 3.</p>
-                            <a href="#" class="btn btn-primary">Ir al proyecto 3</a>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-    
-            <!-- Control de navegación -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
+    <section id="aboutMyId">
+      <div class="row">
+        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ex corrupti soluta eius. Reprehenderit
+            ipsam deserunt omnis, sit explicabo sunt. Aliquid aliquam, repellendus adipisci iste iusto magnam
+            reprehenderit molestiae dolorum?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam accusamus maiores libero hic, esse beatae
+            consequatur earum nisi consequuntur amet numquam iste odit possimus laboriosam necessitatibus voluptatibus
+            adipisci est. Aut?</p>
         </div>
+
+
+        <div class="col-md-4">
+          <div class="row">
+            <img src="assets/img/imgProyectos/suit.jpg" alt="foto de perfil" style="width: 250px;">
+
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quis exercitationem sed omnis ad, aliquid
+            repellat? Excepturi tempora, commodi asperiores ullam, placeat itaque dignissimos molestiae, nostrum id
+            tempore atque modi.
+          </p>
+
+        </div>
+
+
+      </div>
+
     </section>
 
+    <!-- TODO ajustar el tamaño de la car para que se mantenga fijo y despues ajustar tamaño de las imagenes-->
+    <!--seccion de mis proyectos-->
+    <section class="container my-5" id="proyectosId">
+      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          assets/img/imgProyectos/spaceControl.jpg
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="row">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Proyecto 2</h5>
+                    <p class="card-text">Descripción breve del proyecto 2.</p>
+                    <a href="#" class="btn btn-primary">Ir al proyecto 2</a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <img src="assets/img/imgProyectos/spaceControl.jpg" class="card-img-top" alt="Proyecto 2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <div class="row">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Proyecto 2</h5>
+                    <p class="card-text">Descripción breve del proyecto 2.</p>
+                    <a href="#" class="btn btn-primary">Ir al proyecto 2</a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <img src="assets/img/imgProyectos/spaceShip.jpg" class="card-img-top" alt="Proyecto 2">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="row">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Proyecto 2</h5>
+                    <p class="card-text">Descripción breve del proyecto 2.</p>
+                    <a href="#" class="btn btn-primary">Ir al proyecto 2</a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <img src="assets/img/imgProyectos/suit.jpg" class="card-img-top" alt="Proyecto 2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Control de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- TODO mejorar formulario de contacto-->
     <!--seccion de formulario de contacto-->
     <section>
-      <div class="container">
+      <div class="container" id="formularioContactoId">
         <form class="row g-3">
           <div class="col">
-            <div class="mb-3">
+            <div>
               <label for="nameInput" class="form-label">Nombre</label>
               <input class="form-control" type="text" id="nameInput" placeholder="Escribe tu nombre">
             </div>
-            <div class="mb-3">
+            <div>
               <label for="emailInput" class="form-label">Email</label>
               <input class="form-control" type="email" id="emailInput" placeholder="Escribe tu email">
             </div>
             <div>
               <label for="mensajeInput" class="form-label">Dejame tu mensaje</label>
-              <textarea name="mensaje" id="mensajeInput"></textarea>
+              <textarea class="form-control" name="mensaje" id="mensajeInput"></textarea>
             </div>
             <div class="col-12 mb-3">
               <button type="submit" class="btn btn-primary" name="btnSubmit" id="btnSubmit">Enviar</button>
 
             </div>
           </div>
-          
+
         </form>
       </div>
     </section>
 
   </main>
   <footer>
-    
+
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
