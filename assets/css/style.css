@@ -3,20 +3,8 @@ border-radius: 10px;
 }
 
 nav{
-  background-color: #253948 !important;
-}
-/* #proyectosId .carousel-item{
-  height: 500px;
-  width: 300px;
-} */
-
-#proyectosId img {
-object-fit: cover;
-
-}
-
-
-
+  background-color: #253948;
+} 
 
 body {
   font-family: Arial, sans-serif;
@@ -24,14 +12,26 @@ body {
   padding: 0;
   background-color: 	#798998;
 }
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+footer {
+  background-color: #253948;
 }
+
+#proyectosId img {
+object-fit: cover;
+
+}
+
 header img {
   height: 50px;
 }
+.navbar-nav {
+  margin-left: auto;
+}
+
+
+
+
+/*
 header nav a {
   color: #fff;
   margin: 0 10px;
@@ -79,3 +79,4 @@ footer nav a {
   margin: 0 10px;
   text-decoration: none;
 }
+  */
