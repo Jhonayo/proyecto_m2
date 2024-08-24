@@ -28,6 +28,11 @@ header img {
   margin-left: auto;
 }
 
+.carousel-inner {
+  width: max-content;
+  max-height: 39rem;
+}
+
 
 
 
