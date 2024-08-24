@@ -1,33 +1,24 @@
-// logica para recuperar los mensajes y guardarlos en un json
-document.querySelector('#btnSubmit').addEventListener('click', guardarDatosPeliculas);
-imprimirTabla();
+document.querySelector('#btnSubmit').addEventListener('click', function (event) {
+    event.preventDefault();
+    guardarDatosMensajes();
+    mostrarPopup();
+});
 
+function guardarDatosMensajes() {
+    var guardarMensajeNombre = document.querySelector('#nameInput').value,
+        guardarMensajeEmail = document.querySelector('#emailInput').value,
+        guardarMensajeTexto = document.querySelector('#mensajeInput').value;
 
-function guardarDatosPeliculas() {
-    var guardarPeliculaTitulo = document.querySelector('#title').value,
-        guardarPeliculaDirector = document.querySelector('#director').value,
-        guardarPeliculaLanzamiento = document.querySelector('#lanzamiento').value;
-    
-    agregarDatosPelicula(guardarPeliculaTitulo, guardarPeliculaDirector, guardarPeliculaLanzamiento);
-    imprimirTabla();
+    var nuevoMensaje = {
+        nombre: guardarMensajeNombre,
+        email: guardarMensajeEmail,
+        mensaje: guardarMensajeTexto
+    };
+
+    console.log('Datos enviados:', JSON.stringify(nuevoMensaje, null, 2));
 }
 
-function imprimirTabla() {
-    var lista = obtenerListaPelicula(),
-    tbody = document.querySelector('#tablaPelicula tbody');
-
-    tbody.innerHTML = '';
-
-    for (var i = 0; i < lista.length; i++) {
-        var row = tbody.insertRow(i),
-            tituloCelda = row.insertCell(0),
-            directorCelda = row.insertCell(1);
-            fechaCelda = row.insertCell(2);
-        
-        tituloCelda.innerHTML = lista[i].title;
-        directorCelda.innerHTML = lista[i].director;
-        fechaCelda.innerHTML = lista[i].date;
-
-        tbody.appendChild(row);
-    }
+function mostrarPopup() {
+    var popupModal = new bootstrap.Modal(document.getElementById('mensajeEnviadoModal'));
+    popupModal.show();
 }
