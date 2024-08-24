@@ -2,6 +2,16 @@ var mensajesRecibidos = [];
 
 var peliculaDatos = [];
 
+function agregarDatosMensaje(nombreMensaje, emailMensaje, textoMensaje){
+    var NuevoMensaje = {
+        nombre: nombreMensaje,
+        email: emailMensaje,
+        mensaje: textoMensaje
+    };
+    console.log(NuevoMensaje);
+    mensajesRecibidos.push(NuevoMensaje);avance
+}
+/*
 function agregarDatosPelicula(peliculaTitulo, peliculaDirector, peliculaFechaLanzamiento) {
     
     var NuevaPelicula = {
@@ -12,7 +22,7 @@ function agregarDatosPelicula(peliculaTitulo, peliculaDirector, peliculaFechaLan
 
     console.log(NuevaPelicula); 
     peliculaDatos.push(NuevaPelicula);
-}
+}*/
 
 
 //function obtenerListaPelicula() {
