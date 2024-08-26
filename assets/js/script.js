@@ -22,3 +22,9 @@ function mostrarPopup() {
     var popupModal = new bootstrap.Modal(document.getElementById('mensajeEnviadoModal'));
     popupModal.show();
 }
+
+//funcion para agradecer por nombre por el mensaje
+function mensajeGracias () {
+
+
+}

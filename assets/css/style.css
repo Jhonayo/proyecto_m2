@@ -1,10 +1,15 @@
-#logo {
-border-radius: 10px;
-}
 
 nav{
   background-color: #253948;
 } 
+.navbar-nav {
+  margin-left: auto;
+}
+
+nav img {
+  height: 50px;
+  border-radius: 10px;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -12,82 +17,54 @@ body {
   padding: 0;
   background-color: 	#798998;
 }
-footer {
-  background-color: #253948;
+#seccionBg {
+  background-color: #EEEDEE;
+  border-radius: 25px;
 }
 
-#proyectosId img {
-object-fit: cover;
-
+#fotoPerfilId {
+  border-radius: 20px;
+  box-shadow: -5px 5px 10px 2px black;
+  
 }
 
-header img {
-  height: 50px;
-}
-.navbar-nav {
-  margin-left: auto;
-}
+/* main section {
+  margin-bottom: 15rem !important;
+} */
 
 .carousel-inner {
-  width: max-content;
-  max-height: 39rem;
+  width: 90%;
+  height: 39rem;
 }
 
-#carouselId img {
-  width: 100%;
-  height: 100%;
+#carruselId img {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+footer{
+  background-color: #253948;
+} 
+
+#iconos img {
+  height: 32px;
+}
+
+@media (min-width: 992px) {
+  .carruselId .projectCarousel .carousel-item .card .imgConfig {
+    height: 30% !important; /* La altura del contenedor de la imagen será el 30% de la altura de la tarjeta */
+  }
+
+  .carruselId .projectCarousel .carousel-item .card .imgConfig img {
+    height: 100%; /* La imagen ocupará el 100% del contenedor, es decir, el 30% de la tarjeta */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+  }
 }
 
 
 
-
-/*
-header nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-section {
-  padding: 20px;
-}
-.cta-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-}
-form label {
-  margin-top: 10px;
-}
-form input, form select, form textarea {
-  margin-top: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-form button {
-  margin-top: 10px;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-footer nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-  */
