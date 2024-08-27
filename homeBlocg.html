@@ -33,15 +33,18 @@
   <main class="flex-shrink-0 h-100 mt-5">
     <!--seccion acerca de mi-->
     <section class="container-fluid px-4 py-5" id="aboutMeId">
-      <div class="row px-sm-2 px-lg-4 mx-xl-4" id="seccionBg">
-        <div class="col-lg-5 col-xl-4 py-4" ;>
-          <div class="row px-4">
-            <div class="col-sm-4 col-md-12 px-2 py-2 d-flex flex-shrink-0 justify-content-center align-items-center">
-              <img src="assets/img/fotoPerfil.jpg" alt="foto de perfil" style="width: 250px; height: 250px;"
-                id="fotoPerfilId">
-            </div>
-            <div class="col-sm-8 col-md-12 px-2 pt-4 pb-2" id="textoFotoPerfilId">
-              <p>Hola, ¿cómo estás? <br> Me presento... Este soy yo. <br></p>
+      <div class="row-12 px-sm-2 px-lg-4 mx-xl-4" id="seccionBg">
+        <div class="row px-4 py-4" ;>
+          <!--imagen-->
+          <div
+            class="col-sm-4 col-md-5 col-lg-4 my-sm-2 px-2 d-flex flex-shrink-0 justify-content-center align-items-center">
+            <img src="assets/img/fotoPerfil.jpg" alt="foto de perfil" id="fotoPerfilId">
+          </div>
+          <!-- texto foto-->
+          <div class="col-sm-8 col-md-7 col-lg-8 px-2 pt-4 pb-2 ps-md-4" id="textoFotoPerfilId">
+            <div class="fs-6">
+              <h4>Hola, ¿cómo estás? </h4><br>
+              <p>Me presento: <br>Este soy yo, Juan Ignacio</p>
               <p>Es un poco difícil hacer la presentación de uno mismo para este proyecto, quizás porque es la primera
                 vez que me toca hablar de mí y empezar a mostrar lo que he ido aprendiendo sobre programación.
                 <br>Pero aquí estamos, dando un paso hacia adelante y continuando en este camino de mejora continua,
@@ -49,13 +52,20 @@
                 página sea de tu agrado, y si tienes comentarios o sugerencias de mejora, no dudes en dejar tu opinión.
               </p>
             </div>
-
           </div>
         </div>
-
-        <div class="col-lg-7 col-xl-8 px-4 py-4" id="textoPresentacioId">
-          <h1 class="display-4 fw-medium lh-1 text-body-emphasis mb-3 pb-5">Un poco de historia sobre mí en este viaje
-          </h1>
+      </div>
+    </section>
+    <!--seccion un poco de mi historia-->
+    <section class="container-fluid px-4 py-5" id="aboutMeId">
+      <div class="row px-sm-2 px-lg-4 mx-xl-4" id="seccionBg">
+        <div class="row">
+          <div class="col-12 px-4 pt-4 pb-lg-4">
+            <h1 class="display-4 fw-medium lh-1 text-body-emphasis py-2">Un poco de historia sobre mí en este viaje
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-6 px-4 pt-4 pb-lg-4">
           <p class="fs-6">Un poco sobre mí: soy un ingeniero en administración de empresas que busca su camino
             en el área de la tecnología, ya que ha sido algo que me ha apasionado desde pequeño. Creo que desde que
             desarmé mis primeros juguetes electrónicos, me preguntaba cómo funcionaban y si era posible hacer que
@@ -67,6 +77,9 @@
             como un hobby. Me he dedicado a reparar consolas y computadoras, tanto en hardware como en software, y
             últimamente, me he enfocado más en la programación de pequeños proyectos.
           </p>
+
+        </div>
+        <div class="col-lg-6 px-4 pb-4 pt-lg-4">
           <p class="fs-6 text-justify">
             Mi ingreso más decidido al mundo de la programación comenzó gracias al apoyo de mi polola Cintya, quien
             trabaja como programadora Front-end y sin cuyo apoyo no estaría donde estoy hoy. Le debo muchísimo, ya que
@@ -75,35 +88,97 @@
             acercando más a Java, y aquí pretendo mostrar un poco de lo que he creado en este apasionante y entretenido
             viaje.
           </p>
-
         </div>
       </div>
     </section>
     <!--espaciador de secciones-->
     <div class="b-example-divider"></div>
-    <!--seccion de mis proyectos-->
+    <!--seccion de carrusel proyectos-->
     <section class="container-fluid px-4 py-5" id="carruselId">
-      <div class="row px-sm-2 px-lg-4 mx-xl-4" id="seccionBg">
-        <div class="carousel-item active">
-          <div class="card h-100">
-            <div class="row g-0 h-100">
-              <div class="col-lg-4 col">
-                <img src="assets/img/imgProyectos/suit.jpg" class="img-fluid" alt="Proyecto 2">
+      <div class="px-sm-2 px-lg-4 mx-xl-4" id="seccionBg">
+        <div class="carousel slide" id="carouselComponet" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!--pagina 1-->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 car-img-custom col-md-4 col-lg-5 p-4">
+                  <img src="assets/img/imgProyectos/spaceControl.jpg" class="img-custom rounded-top-3" alt="...">
+                </div>
+                <div class="col h-100">
+                  <div class="row h-100">
+                    <div class="col-12 px-4 mb-2 my-md-3">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere cupiditate error voluptates
+                        et delectus aut? Officia, magnam amet! Modi accusamus nesciunt quam enim necessitatibus vel?
+                        Amet laboriosam ipsum perferendis!</p>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus amet facilis odit nisi
+                        temporibus iure cum sapiente facere unde aliquam alias totam beatae voluptatibus molestiae illum
+                        quod, voluptatum non est!</p>
+                    </div>
+                    <div class="col-12 px-4 d-flex flex-column justify-content-end">
+                      <a href="#" class="btn btn-primary">Ir al sitio</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-8 row-cols-lg-auto">
-                <div class="card-body">
-                  <h5 class="card-title mt-2">Proyecto 3</h5>
-                  <p class="card-text mt-4">Descripción breve del proyecto 3<br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui odit facilis. Fuga ipsum
-                    mollitia vero illo veritatis, nobis quaerat facilis modi reprehenderit porro laborum iste
-                    dignissimos est odio doloribus..</p>
-                  <a href="https://github.com/Jhonayo" class="btn btn-primary ">Ir al proyecto 3</a>
+            </div>
+            <!--pagina 2-->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 car-img-custom col-md-4 col-lg-5 p-4">
+                  <img src="assets/img/imgProyectos/suit.jpg" class="img-custom rounded-top-3" alt="...">
+                </div>
+                <div class="col h-100">
+                  <div class="row h-100">
+                    <div class="col-12 px-4 mb-2 my-md-3">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere cupiditate error voluptates
+                        et delectus aut? Officia, magnam amet! Modi accusamus nesciunt quam enim necessitatibus vel?
+                        Amet laboriosam ipsum perferendis!</p>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus amet facilis odit nisi
+                        temporibus iure cum sapiente facere unde aliquam alias totam beatae voluptatibus molestiae illum
+                        quod, voluptatum non est!</p>
+                    </div>
+                    <div class="col-12 px-4 d-flex flex-column justify-content-end">
+                      <a href="#" class="btn btn-primary">Ir al sitio</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pagina 3-->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 car-img-custom col-md-4 col-lg-5 p-4">
+                  <img src="assets/img/imgProyectos/spaceShip.jpg" class="img-custom rounded-top-3" alt="...">
+                </div>
+                <div class="col h-100">
+                  <div class="row h-100">
+                    <div class="col-12 px-4 mb-2 my-md-3">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere cupiditate error voluptates
+                        et delectus aut? Officia, magnam amet! Modi accusamus nesciunt quam enim necessitatibus vel?
+                        Amet laboriosam ipsum perferendis!</p>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus amet facilis odit nisi
+                        temporibus iure cum sapiente facere unde aliquam alias totam beatae voluptatibus molestiae illum
+                        quod, voluptatum non est!</p>
+                    </div>
+                    <div class="col-12 px-4 d-flex flex-column justify-content-end">
+                      <a href="#" class="btn btn-primary">Ir al sitio</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
+          <!-- Botones de Control -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselComponet" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselComponet" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </section>
     <!--espaciador de secciones-->
@@ -133,8 +208,25 @@
 
         </form>
       </div>
+      <!--modal-->
+      <div class="modal fade" id="mensajeEnviadoModal" tabindex="-1" aria-labelledby="mensajeEnviadoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bolder" id="mensajeEnviadoModalLabel">Mensaje Enviado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-center">
+              Gracias por tu mensaje!
+            </div>
+            <div class="modal-footer ">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
 
   </main>
 

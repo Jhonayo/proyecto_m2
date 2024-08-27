@@ -15,36 +15,35 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: 	#798998;
+  background-color: 	#9fafc2;
 }
 #seccionBg {
-  background-color: #EEEDEE;
+  background-color: #c7cbd3ab;
   border-radius: 25px;
+  box-shadow: -1px 2px 5px  #3A3F45;
+
 }
 
 #fotoPerfilId {
-  border-radius: 20px;
-  box-shadow: -5px 5px 10px 2px black;
-  
-}
-
-/* main section {
-  margin-bottom: 15rem !important;
-} */
-
-.carousel-inner {
-  width: 90%;
-  height: 39rem;
-}
-
-#carruselId img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  border-radius: 20px;
+  box-shadow: -5px 5px 5px 2px 3A3F45;
+
 }
 
-.carousel-item {
+#carouselComponet > .carousel-inner{
+  background-color: transparent;
+  border: none;
+}
+
+.img-custom {
+  object-fit: cover;
   height: 100%;
+  width: 100%;
+  object-position: center;
+
 }
 
 footer{
@@ -54,17 +53,29 @@ footer{
 #iconos img {
   height: 32px;
 }
-
-@media (min-width: 992px) {
-  .carruselId .projectCarousel .carousel-item .card .imgConfig {
-    height: 30% !important; /* La altura del contenedor de la imagen será el 30% de la altura de la tarjeta */
+@media (max-width: 767px) {
+  .carousel-inner{
+    height: 50rem !important;
   }
+  .car-img-custom{
+    height: 20rem !important;
+    }
 
-  .carruselId .projectCarousel .carousel-item .card .imgConfig img {
-    height: 100%; /* La imagen ocupará el 100% del contenedor, es decir, el 30% de la tarjeta */
-    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+}
+
+@media (min-width: 768px) {
+  .carousel-inner{
+    height: 25rem !important;
+  }
+  .car-img-custom {
+    padding: 1rem 1rem 1rem 1rem !important;
+    height: 25rem !important;
+  }
+  .img-custom {
+    border-radius: 1rem 0.25rem 0.25rem 1rem !important;
   }
 }
+
 
 
 
