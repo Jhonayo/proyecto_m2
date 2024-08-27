@@ -1,93 +1,81 @@
-#logo {
-border-radius: 10px;
-}
 
 nav{
   background-color: #253948;
 } 
+.navbar-nav {
+  margin-left: auto;
+}
+
+nav img {
+  height: 50px;
+  border-radius: 10px;
+}
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: 	#798998;
+  background-color: 	#9fafc2;
 }
-footer {
-  background-color: #253948;
-}
-
-#proyectosId img {
-object-fit: cover;
+#seccionBg {
+  background-color: #c7cbd3ab;
+  border-radius: 25px;
+  box-shadow: -1px 2px 5px  #3A3F45;
 
 }
 
-header img {
-  height: 50px;
-}
-.navbar-nav {
-  margin-left: auto;
-}
-
-.carousel-inner {
-  width: max-content;
-  max-height: 39rem;
-}
-
-#carouselId img {
-  width: 100%;
-  height: 100%;
+#fotoPerfilId {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: -5px 5px 5px 2px 3A3F45;
+
 }
 
-
-
-
-/*
-header nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-section {
-  padding: 20px;
-}
-.cta-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-}
-form label {
-  margin-top: 10px;
-}
-form input, form select, form textarea {
-  margin-top: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-form button {
-  margin-top: 10px;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px;
+#carouselComponet > .carousel-inner{
+  background-color: transparent;
   border: none;
-  border-radius: 5px;
 }
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+
+.img-custom {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+
 }
-footer nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
+
+footer{
+  background-color: #253948;
+} 
+
+#iconos img {
+  height: 32px;
 }
-  */
+@media (max-width: 767px) {
+  .carousel-inner{
+    height: 50rem !important;
+  }
+  .car-img-custom{
+    height: 20rem !important;
+    }
+
+}
+
+@media (min-width: 768px) {
+  .carousel-inner{
+    height: 25rem !important;
+  }
+  .car-img-custom {
+    padding: 1rem 1rem 1rem 1rem !important;
+    height: 25rem !important;
+  }
+  .img-custom {
+    border-radius: 1rem 0.25rem 0.25rem 1rem !important;
+  }
+}
+
+
+
+
