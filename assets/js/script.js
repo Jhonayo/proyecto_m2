@@ -1,6 +1,10 @@
 document.querySelector('#btnSubmit').addEventListener('click', function (event) {
     event.preventDefault();
     guardarDatosMensajes();
+    mensajeGracias()
+    document.getElementById("nameInput").value = "";
+    document.getElementById("emailInput").value = "";
+    document.getElementById("mensajeInput").value = "";
     mostrarPopup();
 });
 
@@ -24,7 +28,8 @@ function mostrarPopup() {
 }
 
 //funcion para agradecer por nombre por el mensaje
-function mensajeGracias () {
-
-
+function mensajeGracias() {
+    var nombre = document.querySelector('#nameInput').value;
+    var mensajeModal = document.querySelector('#mensajeEnviadoModal .modal-body');
+    mensajeModal.textContent = `${nombre}, ¡Gracias por tu mensaje!`;
 }
